@@ -18,7 +18,7 @@ app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+
 
 app.get("/", function (req, res) {
 
@@ -92,3 +92,5 @@ app.get("/about", function (req, res) {
     res.render("about");
 })
 
+
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
